@@ -4,6 +4,7 @@ import ContactSection from './components/ContactSection.jsx'
 import NavbarSection from './components/NavbarSection.jsx'
 import ProjectsSection from './components/ProjectsSection.jsx'
 import WelcomeSection from './components/WelcomeSection.jsx'
+import FooterSection from './components/FooterSection.jsx'
 import './App.css'
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
       <section id="contact-section">
         <ContactSection />
       </section>
+
+      {/*FOOTER SECTION*/}
+      <FooterSection />
     </Container>
   )
 }

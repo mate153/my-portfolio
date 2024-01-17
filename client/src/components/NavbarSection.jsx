@@ -9,7 +9,7 @@ function NavbarSection() {
   return (
     <Navbar expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Mate Szakasits</Navbar.Brand>
+        <Navbar.Brand href="#welcome-section">Mate Szakasits</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav  className="me-auto justify-content-end" style={{width: '100%'}}>

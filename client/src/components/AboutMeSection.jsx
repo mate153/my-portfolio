@@ -3,7 +3,7 @@ import './style/AboutMeSection.css'
 
 function AboutMeSection() {
   return (
-    <div>AboutMeSection</div>
+    <div style={{height: '90vh'}}>AboutMeSection</div>
   )
 }
 

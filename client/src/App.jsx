@@ -10,7 +10,7 @@ import './App.css'
 function App() {
 
   return (
-    <Container fluid style={{ padding: 0, margin: 0, width: '100%' }}>
+    <Container className='bg-dark mt-auto' fluid style={{ padding: 0, margin: 0, width: '100%' }}>
       {/*NAVBAR SECTION*/}
       <section id="navbar-section">
         <NavbarSection />

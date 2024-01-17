@@ -5,6 +5,7 @@ import NavbarSection from './components/NavbarSection.jsx'
 import ProjectsSection from './components/ProjectsSection.jsx'
 import WelcomeSection from './components/WelcomeSection.jsx'
 import FooterSection from './components/FooterSection.jsx'
+import ScrollToTopButton from './components/ScrollToTopButton.jsx'
 import './App.css'
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
   return (
     <Container className='bg-dark mt-auto' fluid style={{ padding: 0, margin: 0, width: '100%' }}>
       {/*NAVBAR SECTION*/}
-      <section id="navbar-section">
-        <NavbarSection />
-      </section>
+      <NavbarSection />
 
       {/*WELCOME SECTION*/}
       <section id="welcome-section">
@@ -35,6 +34,9 @@ function App() {
       <section id="contact-section">
         <ContactSection />
       </section>
+
+      {/*SCROLL TO TOP BUTTON*/}
+      <ScrollToTopButton />
 
       {/*FOOTER SECTION*/}
       <FooterSection />

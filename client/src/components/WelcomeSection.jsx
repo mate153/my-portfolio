@@ -22,12 +22,23 @@ function WelcomeSection({translation}) {
     };
   }, [translation]);
 
+  const downloadResume = () => {
+    const resumeUrl = './mate_szakasits_CV.pdf';
+    
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'mate_szakasits_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Row className='parallax-container d-flex align-items-center'>
       <div id="particles-js" className='particles-js'></div>
       <Col md={6} className='welcome-section-img d-flex align-items-center order-2 order-md-1'>
         <div className="hero-pic">
-          <img src="./images/profile_img.jpg" alt="profile pic"/>
+          <img src="./images/profile_img1.png" alt="profile pic"/>
         </div>
       </Col>
       <Col md={6} className='welcome-section-text order-1 order-md-2'>
@@ -36,7 +47,7 @@ function WelcomeSection({translation}) {
           <h1>{translation("my-name")}</h1>
         </div>
         <div className="btn-group">
-          <a href="#" className="btn1 active">{translation("download-cv")}</a>
+          <a href="#" onClick={downloadResume} className="btn1 active">{translation("download-cv")}</a>
           <a href="#contact-section" className="btn1 btn2">{translation("contact")}</a>
         </div>
         <div className="social">
